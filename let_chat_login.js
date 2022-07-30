@@ -3,7 +3,7 @@ function add(){
 
    
 
-   user_name = document.getElementById("user_input").value;
+   user_name = document.getElementById("user-name").value;
    if (user_name==""){
 
     Swal.fire({

@@ -1,1 +1,165 @@
-/*start code*/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+.continer {
+  background-color: #f1f8fc;
+  width:100%;
+  height: 100%;
+  padding:10px;
+}
+.headesr{
+display: flex;
+justify-content: space-between;
+height:3rem;
+   font-family: 'Roboto Mono', monospace;
+}
+.logout-btn {
+  border: 0px solid;
+  outline: none;
+  background-color: rgb(240, 93, 93);
+  color: #fff;
+  padding:10px;
+  transition: .2s;
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.logout-btn:hover {
+  background-color: rgb(241, 43, 43);
+}
+.headser h2 i {
+color: #333;
+}
+.headesr h2 {
+  margin-left:10px;
+  font-weight: 500;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 1px;
+  font-size: 36px;
+}
+.main {
+  width: 100%;
+  margin-top: 40px;
+  text-align: center;
+}
+.name-holder {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+#name {
+  margin-left:10px;
+}
+.room_create_div {
+  margin-top:40px;
+  display: block;
+  margin-bottom: 40px;
+}
+.room_create_div input {
+  padding: 10px;
+  border: 0px solid;
+  margin-top: 10px;
+  outline: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #dedede;
+  letter-spacing: 1px;
+  width:60%;
+  transition: .3s;
+}
+.room_create_div input:focus {
+box-shadow: 7px 7px 7px rgba(0,0,0,0.2);
+}
+.room_create_div button  {
+  padding: 10px;
+  border: 0px solid;
+  outline: none;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  background-color: #64bcf4;
+  transition: .3s;color: #fff;
+  width:10rem;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.room_create_div button:hover {
+  background-color: #5bacdf;
+}
+.line {
+  width:12rem;
+  height: 5px;
+  background-color: #fff;
+  justify-content: center;
+  display: block;
+  align-items: center;
+}
+.room_join_div {
+  width: 100%;
+  margin-top:40px;
+}
+.headers {
+  background-color: #484848;
+  width:60%;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+padding:5px;
+border-bottom: 2px solid #fff;
+}
+#output {
+  background-color:#484848 ;
+  height:30rem;
+  width:60%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: auto;
+  max-height: 30rem;
+  width: 60%;
+  padding: 10px;
+  color: #fff;
+  margin-bottom:2rem;
+}
+#output::-webkit-scrollbar {
+  width:15px;
+}
+
+#output::-webkit-scrollbar-thumb {
+  border: 2px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  border-radius: 9999px;
+  background-color: #AAAAAA;
+}
+#output::-webkit-scrollbar-track {
+  background-color: #ffffff;
+  padding:10px;
+  width: 15px;
+}
+@media screen and (max-width:490px){
+  .room_create_div input {
+width:100%;
+margin-bottom:10px;
+  }
+  #output {
+    width:100%;
+  }
+  .headers {
+    width:100%;
+  }
+}
