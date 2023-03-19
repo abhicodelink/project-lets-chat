@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Join Or Create Room | Lets-Chat Web</title>
+        <title>Join Or Create Room | Web</title>
         <link rel="icon" href="favicon-16x16.png">
-        <link rel="stylesheet" href="let_chat_room.css">
+        <link rel="stylesheet" href="let_chat.css">
         <!-------------------------------------------------------------firebase link------------------------------------------------------->
         <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js" defer></script>
         <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js" defer></script>
@@ -15,41 +15,25 @@
           <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <script src="https://kit.fontawesome.com/809920df63.js"></script>
-<script type="text/javascript" src="let_chat_room.js" defer></script>
+<script type="text/javascript" src="let_chat.js" defer></script>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Roboto+Mono&display=swap" rel="stylesheet">
     </head>
     <body>
                     <div class="continer col-md-12">
         <div class="headesr">
             <h2>Lets Chat <i class="fab fa-y-combinator"></i></h2>
-<button class="logout-btn" onclick="logout()"> Logout</button>
+<button class="logout-btn glyphicon glyphicon-log-out" onclick="leave()">Leave</button>
         </div>
         <div class="main">
-            <div class="name-holder">
-                <h4>Hey There, </h4>
-                <h4 id="name"></h4>
+            <div class="header">
+              <h2 id="room_name">#Room-Name</h2>
             </div>
-            <center>
-                <div class="line"></div>
-            </center>
-            <div class="room_create_div">
-            <h3>Create Room</h3>
-            <input type="text" placeholder="Room Name" id="room_int">
-            <button type="button" onclick="create()">Create</button>
-            </div>
-            <h3>Or</h3>
-            <div class="room_join_div">
-                <h3>Join Room</h3>
-                <center>
-                <div class="headers">
-                    <h3>Rooms Available</h3>
-                </div>
-                <div id="output">
-                </div>
-                </center>
+            <div class="chat_box" id="chat_box"></div>
+            <div class="send_chat_box col-md-12">
+              <input tyoe="text" placeholder="Type Your Message Here" id="chat-int">
+              <button class="btn btn-success send-btn" onclick="send()">Send <i class="fa-solid fa-paper-plane"></i></button>
             </div>
         </div>
-                    </div>           
-                    
-    </body>
+       </div>
+     </body>
 </html>
